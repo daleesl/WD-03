@@ -10,12 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark position-fixed w-100 top-0"
+    <nav class="navbar navbar-expand-lg  position-sticky w-100 top-0"
         style="z-index: 1000; background-color: rgba(23, 23, 23, 0.95);">
         <div class="container-fluid px-3 px-md-5">
             <!-- Logo/Brand -->
@@ -42,29 +43,259 @@
                         <a class="nav-link text-white px-3 py-2" href="#Attractions-Section">Attractions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white px-3 py-2" href="#Gallery-Section">Gallery</a>
+                        <a class="nav-link text-white px-3 py-2" href="#Cuisine-Section">Cuisine</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <section id="Home-Section" class="hero-video position-relative vh-100 vw-100 overflow-hidden"
-        style="margin: 0; padding: 0;">
-        <video class="position-fixed top-0 start-0 w-100 h-100" autoplay muted loop style="object-fit: cover">
+    <!-- Home Section -->
+    <section id="Home-Section" class="hero-video position-relative vh-100 w-100 overflow-hidden">
+        <video class="position-absolute top-0 start-0 w-100 h-100" autoplay muted loop style="object-fit: cover;">
             <source src="assets/videos/japan-vid.mp4" type="video/mp4">
         </video>
 
         <div class="position-absolute top-50 start-50 translate-middle text-center text-white" style="z-index: 2;">
-            <h1 class="hero-text fw-bold">JA<span class="text-danger">P</span>AN</h1>
-            <p class="fs-6 fs-sm-5 fs-md-4 fs-lg-4">Discover Japan — where tradition meets innovation, and every moment
+            <h2 class="hero-text display-1 fw-bold">JA<span class="text-danger">P</span>AN</h2>
+            <p class="hero-subtitle">Discover Japan — where tradition meets innovation, and every moment
                 reveals timeless beauty
                 and culture.</p>
-            <button class="btn btn-light btn-lg">Explore Now</button>
+            <button class="btn btn-danger btn-lg">Explore Now</button>
         </div>
     </section>
 
+    <!-- About Section -->
+    <section id="About-Section">
+        <div class="container-fluid mt-4">
+            <div class="row justify-content-center align-items-center">
+                <div
+                    class="col-12 col-lg-5 d-flex justify-content-center justify-content-lg-end align-items-center mb-4 mb-lg-0">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d16594336.312625252!2d133.90899931634092!3d32.91842462611004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34674e0fd77f192f%3A0xf54275d47c665244!2sJapan!5e1!3m2!1sen!2sph!4v1762227616612!5m2!1sen!2sph"
+                        width="100%" height="450" style="border:0; max-width: 600px;" allowfullscreen="" loading="lazy"
+                        class="rounded-5" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
 
+                <div class="col-12 col-lg-7 px-4">
+                    <h2 class="fw-bold display-1 mb-4 text-center text-lg-start">About <span
+                            class="text-danger">JAPAN</span></h2>
+                    <p class="mb-3">Japan, an island nation in East Asia, is renowned for its rich cultural heritage,
+                        advanced technology, and stunning natural beauty. From the bustling streets of Tokyo to the
+                        serene temples of Kyoto, Japan offers a unique blend of tradition and modernity. The country is
+                        famous for its cherry blossoms, samurai history, sushi cuisine, and cutting-edge innovations in
+                        robotics and electronics. With a deep respect for nature and a commitment to harmony, Japan
+                        captivates visitors with its festivals, art, and warm hospitality.</p>
+
+                    <p class="mb-3">This beautiful country consists of several islands, each offering unique experiences
+                        and breathtaking landscapes. From mountains to beaches, Japan provides diverse scenery
+                        throughout
+                        the changing seasons. The culture emphasizes respect, tradition, and continuous growth, creating
+                        a harmonious society that values both ancient customs and modern progress.</p>
+
+                    <p class="mb-3">Visitors can explore traditional temples, experience local festivals, and enjoy
+                        world-renowned cuisine. The country seamlessly blends historical architecture with modern
+                        technology, offering something special for every traveler. Whether you're interested in art,
+                        nature, or innovation, Japan provides unforgettable experiences and lasting memories.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Attractions Section -->
+    <section id="Attractions-Section" class="mt-4 text-white py-3" style="background-color: rgb(255, 255, 255);">
+        <h2 class="fw-bold display-1 mb-4 text-center text-dark">Attractions</h2>
+
+        <div class="container d-flex justify-content-center gap-4 flex-wrap px-3 px-md-5">
+            <div class="row">
+                <!-- Mount Fuji -->
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="/assets/images/mount-fuji.jpg" class="card-img-top rounded-4 p-2" alt="Mount Fuji"
+                            style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark fw-bold">Mount Fuji</h5>
+                            <p class="card-text text-dark">Japan's iconic sacred mountain and highest peak at 3,776
+                                meters,
+                                offering breathtaking views and spiritual experiences.</p>
+
+                            <div class="collapse" id="mountFujiDetails">
+                                <p class="card-text text-dark mt-3">
+                                    <strong>Location:</strong> Honshu Island<br>
+                                    <strong>Best Time to Visit:</strong> July–September for climbing<br>
+                                    <strong>Activities:</strong> Hiking, photography, hot springs, temple visits<br>
+                                    <strong>Fun Fact:</strong> Mount Fuji is an active volcano that last erupted in 1707
+                                    and
+                                    is one of Japan’s three sacred mountains.
+                                </p>
+                            </div>
+                            <button class="btn btn btn-outline-danger mt-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#mountFujiDetails" aria-expanded="false"
+                                aria-controls="mountFujiDetails" onclick="toggleReadMore(this)">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fushimi Inari Shrine -->
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="/assets/images/fushimi-inari.jpg" class="card-img-top rounded-4 p-2"
+                            alt="Fushimi Inari Shrine" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark fw-bold">Fushimi Inari Shrine</h5>
+                            <p class="card-text text-dark">Known for its thousands of red torii gates forming a tunnel
+                                up
+                                the sacred Mount Inari in Kyoto.</p>
+
+                            <div class="collapse" id="fushimiInariDetails">
+                                <p class="card-text text-dark mt-3">
+                                    <strong>Location:</strong> Kyoto<br>
+                                    <strong>Best Time to Visit:</strong> Early morning or late afternoon<br>
+                                    <strong>Activities:</strong> Hiking, photography, exploring shrines<br>
+                                    <strong>Fun Fact:</strong> The shrine is dedicated to Inari, the Shinto god of rice
+                                    and
+                                    prosperity.
+                                </p>
+                            </div>
+                            <button class="btn btn-outline-danger mt-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#fushimiInariDetails" aria-expanded="false"
+                                aria-controls="fushimiInariDetails" onclick="toggleReadMore(this)">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Arashiyama Bamboo Grove -->
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card ">
+                        <img src="/assets/images/arashiyama-bamboo.jpg" class="card-img-top rounded-4 p-2"
+                            alt="Arashiyama Bamboo Grove" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark fw-bold">Arashiyama Bamboo Grove</h5>
+                            <p class="card-text text-dark">Walk through towering bamboo stalks that create one of the
+                                most
+                                serene and magical sights in Japan.</p>
+
+                            <div class="collapse" id="arashiyamaDetails">
+                                <p class="card-text text-dark mt-3">
+                                    <strong>Location:</strong> Kyoto<br>
+                                    <strong>Best Time to Visit:</strong> Early morning for fewer crowds<br>
+                                    <strong>Activities:</strong> Walking, sightseeing, visiting nearby temples<br>
+                                    <strong>Fun Fact:</strong> The sound of rustling bamboo here is recognized by
+                                    Japan’s
+                                    government as one of the country’s “100 Soundscapes.”
+                                </p>
+                            </div>
+                            <button class="btn btn-outline-danger mt-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#arashiyamaDetails" aria-expanded="false"
+                                aria-controls="arashiyamaDetails" onclick="toggleReadMore(this)">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tokyo Skytree -->
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="/assets/images/tokyo-skytree.jpg" class="card-img-top rounded-4 p-2"
+                            alt="Tokyo Skytree" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark fw-bold">Tokyo Skytree</h5>
+                            <p class="card-text text-dark">Standing at 634 meters, Tokyo Skytree offers panoramic city
+                                views
+                                and an unforgettable skyline experience.</p>
+
+                            <div class="collapse" id="tokyoSkytreeDetails">
+                                <p class="card-text text-dark mt-3">
+                                    <strong>Location:</strong> Sumida, Tokyo<br>
+                                    <strong>Best Time to Visit:</strong> Evening for the city lights<br>
+                                    <strong>Activities:</strong> Observation decks, shopping, dining<br>
+                                    <strong>Fun Fact:</strong> Tokyo Skytree is the tallest tower in the world and a
+                                    symbol
+                                    of Japan’s modern innovation.
+                                </p>
+                            </div>
+                            <button class="btn btn btn-outline-danger mt-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#tokyoSkytreeDetails" aria-expanded="false"
+                                aria-controls="tokyoSkytreeDetails" onclick="toggleReadMore(this)">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Shibuya Crossing -->
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="/assets/images/shibuya-crossing.jpeg" class="card-img-top rounded-4 p-2"
+                            alt="Shibuya Crossing" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark fw-bold">Shibuya Crossing</h5>
+                            <p class="card-text text-dark">The world’s busiest pedestrian crossing surrounded by giant
+                                screens and neon lights — a symbol of Tokyo’s energy.</p>
+
+                            <div class="collapse" id="shibuyaDetails">
+                                <p class="card-text text-dark mt-3">
+                                    <strong>Location:</strong> Shibuya, Tokyo<br>
+                                    <strong>Best Time to Visit:</strong> Evening for the neon lights<br>
+                                    <strong>Activities:</strong> Street photography, shopping, dining<br>
+                                    <strong>Fun Fact:</strong> Over 2,500 people cross here at once during rush hour —
+                                    making it one of the most famous crossings in the world.
+                                </p>
+                            </div>
+                            <button class="btn btn-outline-danger mt-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#shibuyaDetails" aria-expanded="false" aria-controls="shibuyaDetails"
+                                onclick="toggleReadMore(this)">Read More</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nara Park -->
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card">
+                        <img src="/assets/images/nara-park.jpg" class="card-img-top rounded-4 p-2" alt="Nara Park"
+                            style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark fw-bold">Nara Park</h5>
+                            <p class="card-text text-dark">A vast park famous for its friendly deer that freely roam
+                                around
+                                historic temples and lush greenery.</p>
+
+                            <div class="collapse" id="naraDetails">
+                                <p class="card-text text-dark mt-3">
+                                    <strong>Location:</strong> Nara Prefecture<br>
+                                    <strong>Best Time to Visit:</strong> Spring or autumn for mild weather<br>
+                                    <strong>Activities:</strong> Feeding deer, visiting Todai-ji Temple, nature
+                                    walks<br>
+                                    <strong>Fun Fact:</strong> The deer are considered messengers of the gods and bow to
+                                    visitors for special deer crackers called "shika senbei."
+                                </p>
+                            </div>
+                            <button class="btn btn-outline-danger mt-2" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#naraDetails" aria-expanded="false" aria-controls="naraDetails"
+                                onclick="toggleReadMore(this)">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="Cuisine-Section" class="mt-4 text-white py-3">
+        <h2 class="fw-bold display-1 mb-4 text-center text-white">Cuisine</h2>
+
+    </section>
+    <script>
+        // js for Read More buttons using aria-expanded attribute (utilization of bootstrap framework with js)
+        function toggleReadMore(button) {
+            const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+            setTimeout(() => {
+                if (isExpanded) {
+                    button.textContent = 'Read Less';
+                } else {
+                    button.textContent = 'Read More';
+                }
+            }, 150);
+        }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 

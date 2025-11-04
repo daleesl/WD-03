@@ -1,18 +1,72 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
+
+
 body {
     background-color: #121212;
     color: white;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
+
 .hero-video video {
     filter: brightness(0.5);
 }
 
 .hero-text {
     font-size: 8rem;
+    letter-spacing: 0.3rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+
+.hero-subtitle {
+    font-size: 2rem;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 1199px) {
+    .hero-text {
+        font-size: 7rem;
+        letter-spacing: 0.25rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.75rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .hero-text {
+        font-size: 6rem;
+        letter-spacing: 0.2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 767px) {
+    .hero-text {
+        font-size: 4rem;
+        letter-spacing: 0.15rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-text {
+        font-size: 3.5rem;
+        letter-spacing: 0.1rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+    }
 }
