@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Roboto:wght@400;500&display=swap"
         rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="styles.css" rel="stylesheet">
 </head>
@@ -22,7 +22,8 @@
         <div class="container-fluid px-3 px-md-5">
             <!-- Logo/Brand -->
             <a class="navbar-brand d-flex align-items-center ps-1 ps-md-5" href="#Home-Section">
-                <img src="assets/images/japan-text1.png" class="hero-text img-fluid" alt="JAPAN" style="width: 100px; height: auto;">
+                <img src="assets/images/japan-text1.png" class="hero-text img-fluid" alt="JAPAN"
+                    style="width: 100px; height: auto;">
             </a>
 
             <button class="navbar-toggler ms-auto border-0 p-1" type="button" data-bs-toggle="collapse"
@@ -78,9 +79,9 @@
                         class="rounded-5" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
-                <div class="col-12 col-lg-7 px-4">
-                    <h2 class="fw-bold display-1 mb-4 text-center text-lg-start">About <span
-                            class="text-danger" style="font-family: 'Roboto Slab';">JAPAN</span></h2>
+                <div class="col-12 col-lg-7 py-5 px-4">
+                    <h2 class="fw-bold display-1 mb-4 text-center text-lg-start">About <span class="text-danger"
+                            style="font-family: 'Roboto Slab';">JAPAN</span></h2>
                     <p class="mb-3">Japan, an island nation in East Asia, is renowned for its rich cultural heritage,
                         advanced technology, and stunning natural beauty. From the bustling streets of Tokyo to the
                         serene temples of Kyoto, Japan offers a unique blend of tradition and modernity. The country is
@@ -279,8 +280,212 @@
         </div>
     </section>
 
-    <section id="Cuisine-Section" class="mt-4 text-white py-3">
-        <h2 class="fw-bold display-1 mb-4 text-center text-white">Cuisine</h2>
+    <section id="Culture-Section" class="mt-4 text-white py-3">
+        <h2 class="fw-bold display-1 mb-4 text-center text-white">Cultures & Traditions</h2>
+
+        <div class="container-fluid my-4 px-5">
+            <div class="row py-2 rounded-4" style="background-color: var(--row-color);">
+                <div class="col-5">
+                    <div class="image-wrapper">
+                        <div id="carouselClothing" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselClothing" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselClothing" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselClothing" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/Kimono.jpg" class="d-block w-100" alt="..."
+                                        style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/Yukata.jpg" class="d-block w-100" alt="..."
+                                        style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/haori-dan-hakama.jpg" class="d-block w-100" alt="..."
+                                        style="height: 400px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselClothing"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselClothing"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="description">
+                        <h3 class="fw-bold display-3 mb-3 text-center text-light" style="font-family: Midorima;">
+                            TRADITIONAL CLOTHING</h3>
+                        <p class="text-white fs-5 pt-3" style="font-family: 'Roboto';">Japan’s traditional clothing
+                            reflects
+                            elegance, artistry, and cultural
+                            pride. The <em><strong class="text-danger">kimono</strong></em>, with its silk fabric and
+                            graceful patterns, is worn during special
+                            ceremonies
+                            and festivals. A lighter version called the <em><strong
+                                    class="text-danger">yukata</strong></em> is made of cotton and often seen at
+                            summer
+                            events, paired with wooden sandals and colorful accessories. Another attire, the <em><strong
+                                    class="text-danger">haori</strong></em> and
+                            <em><strong class="text-danger">hakama</strong></em>, is commonly worn at graduations and
+                            formal occasions. These garments, along with
+                            many
+                            regional styles, showcase Japan’s timeless beauty and tradition.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid my-4 px-5">
+            <div class="row py-2 rounded-4" style="background-color: var(--row-color);">
+                <div class="col-5">
+                    <div class="image-wrapper">
+                        <div id="carouselFestival" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselFestival" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselFestival" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselFestival" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/gion-matsuri.png" class="d-block w-100" alt="..."
+                                        style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/hanami-sakura.jpg" class="d-block w-100" alt="..."
+                                        style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/tanabata.jpg" class="d-block w-100" alt="..."
+                                        style="height: 400px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselFestival"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselFestival"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="description">
+                        <h3 class="fw-bold display-3 mb-3 text-center text-light" style="font-family: Midorima;">
+                            FESTIVALS</h3>
+                        <p class="text-white fs-5 pt-3" style="font-family: 'Roboto';">
+                            Japan’s festivals are vibrant celebrations of culture, tradition, and community. The
+                            <strong class="text-danger"><em>Gion Matsuri</em></strong> in Kyoto, held every July, is the
+                            country’s most famous festival, featuring grand floats, music, and parades that honor
+                            centuries
+                            of history. In spring, <strong class="text-danger"><em>Hanami</em></strong> brings people
+                            together to admire the fleeting beauty of cherry blossoms, symbolizing renewal and life’s
+                            impermanence. Meanwhile, the <strong class="text-danger"><em>Tanabata
+                                    Festival</em></strong>,
+                            celebrated on July 7, fills streets with colorful decorations and bamboo branches adorned
+                            with
+                            handwritten wishes, reflecting Japan’s enduring spirit of hope and harmony.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid my-4 px-5">
+            <div class="row py-2 rounded-4" style="background-color: var(--row-color);">
+                <div class="col-5">
+                    <div class="image-wrapper">
+                        <div id="carouselReligion" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselReligion" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselReligion" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselFestival" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner rounded-3">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/torii-gates.jpg" class="d-block w-100" alt="..."
+                                        style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/buddhist-temple.jpg" class="d-block w-100" alt="..."
+                                        style="height: 400px; object-fit: cover;">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/japanese-bow.jpg" class="d-block w-100" alt="..."
+                                        style="height: 400px; object-fit: cover;">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselReligion"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselReligion"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-7">
+                    <div class="description">
+                        <h3 class="fw-bold display-3 mb-3 text-center text-light" style="font-family: Midorima;">
+                            BELIEFS & SPIRITUALITY</h3>
+                        <p class="text-white fs-5 pt-3" style="font-family: 'Roboto';">
+                            Japan’s religion is a harmonious blend of <strong
+                                class="text-danger"><em>Shinto</em></strong> and
+                            <strong class="text-danger"><em>Buddhism</em></strong>, two faiths that have coexisted for
+                            centuries.
+                            <strong class="text-danger"><em>Shinto</em></strong>, Japan’s indigenous belief, centers on
+                            the worship of
+                            <strong class="text-danger"><em>kami</em></strong> — spirits found in nature, ancestors, and
+                            sacred places —
+                            reflecting the people’s deep respect for the natural world. Buddhism, introduced from China
+                            and Korea,
+                            teaches peace, mindfulness, and the path to enlightenment. Many Japanese practice both
+                            religions,
+                            visiting shrines for Shinto rituals and temples for Buddhist prayers, showing how
+                            spirituality in Japan
+                            rituals and
+                            <strong class="text-danger"><em>temples</em></strong> for Buddhist prayers, showing how
+                            spirituality in Japan
+                            is guided by <strong class="text-danger"><em>balance</em></strong>, <strong
+                                class="text-danger"><em>respect</em></strong>,
+                            and <strong class="text-danger"><em>harmony</em></strong>.
+                        </p>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="Cuisine-Section" class="mt-4 text-white py-3" style="background-color: rgb(255, 255, 255);">
+        <h2 class="fw-bold display-1 mb-4 text-center text-dark">Cuisine</h2>
 
     </section>
     <script>
